@@ -1,0 +1,231 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Alumni Portal IIITV</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+
+    <!-- ElegantFonts CSS -->
+    <link rel="stylesheet" href="{% static 'css/elegant-fonts.css' %}">
+
+    <!-- themify-icons CSS -->
+    <link rel="stylesheet" href="{% static 'css/themify-icons.css' %}">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="{% static 'css/swiper.min.css' %}">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    
+
+
+</head>
+<body>
+    <div class="hero-content">
+        <header class="site-header">
+            <div class="top-header-bar">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 d-none d-md-flex flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
+                                    <div class = "logo">
+                                        <a href="#"><img src="{% static 'images/logo.jpg' %}" alt="" width="100" height="100"></a>
+                                    </div>
+                                    <div class="vl"></div>
+                                    <div class="name">
+                                        <h3>INDIAN INSTITUTE OF<br/>INFORMATION TECHNOLOGY<br/>VADODARA</h3>
+                                    </div>
+                        </div>
+                        <div class="col-12 col-lg-6 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
+                            <div class="header-bar-menu">
+                                <ul class="flex justify-content-center align-items-center py-2 pt-md-0">
+                                    <li><a href="#">Register</a></li>
+                                    <li><a href="#">Login</a></li>
+                                </ul>
+                            </div><!-- .header-bar-menu -->
+                        </div><!-- .col -->
+                    </div><!-- .row -->
+                </div><!-- .container-fluid -->
+            </div><!-- .top-header-bar -->
+            
+        </header><!-- .site-header -->
+        
+        <div id="slider">
+                <img class="mySlides" src="{% static 'images/slider5.jpg' %}">
+                <img class="mySlides" src="{% static 'images/slider4.jpg' %}">
+                <img class="mySlides" src="{% static 'images/slider3.jpg' %}">
+                <img class="mySlides" src="{% static 'images/slider2.jpg' %}">
+        </div>  
+        <script>
+                var myIndex = 0;
+                carousel();
+                
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                       x[i].style.display = "none";  
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) {myIndex = 1}    
+                    x[myIndex-1].style.display = "block";  
+                    setTimeout(carousel, 2000); // Change image every 2 seconds
+                }
+        </script>
+        <div class="hero-content-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="hero-content-wrap flex flex-column justify-content-center align-items-start">
+                            <header class="entry-header">
+                                <h2 class="slidingtext">Welcome to<br/>IIITV</h2>
+                            </header><!-- .entry-header -->
+                            <footer class="entry-footer read-more about">
+                                <a href="#">read more</a>
+                            </footer><!-- .entry-footer -->
+                        </div><!-- .hero-content-wrap -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .hero-content-hero-content-overlay -->
+    </div><!-- .hero-content -->
+
+    <div class="icon-boxes">
+        <div class="container-fluid">
+            <div class="flex flex-wrap align-items-stretch">
+                <div class="icon-box">
+                    <div class="icon">
+                        <span class="ti-user"></span>
+                    </div><!-- .icon -->
+                    
+
+                    
+                    <header class="entry-header">
+                        <i class="fa fa-pencil-square" style="font-size:36px;margin-left:25%;margin-right:25%;"></i>
+                        <h2 class="entry-title" style="margin-left:15%;margin-right:15%;">Newsfeed</h2>
+                        
+                    </header><!-- .entry-header -->
+
+                    <div class="entry-content">
+                        <p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    </div><!-- .entry-content -->
+
+                    <footer class="entry-footer read-more">
+                        <a href="#">read more<i class="fa fa-long-arrow-right"></i></a>
+                    </footer><!-- .entry-footer -->
+                </div><!-- .icon-box -->
+
+                <div class="icon-box">
+                    <div class="icon">
+                        <span class="ti-folder"></span>
+                    </div><!-- .icon -->
+
+                    <header class="entry-header">
+                        <i class="fa fa-users" style="font-size:36px;margin-left:25%;margin-right:25%;"></i>
+                        <h2 class="entry-title" style="margin-left:15%;margin-right:15%;">Community</h2>
+                    </header><!-- .entry-header -->
+
+                    <div class="entry-content">
+                        <p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    </div><!-- .entry-content -->
+
+                    <footer class="entry-footer read-more">
+                        <a href="#">read more<i class="fa fa-long-arrow-right"></i></a>
+                    </footer><!-- .entry-footer -->
+                </div><!-- .icon-box -->
+
+                <div class="icon-box">
+                    <div class="icon">
+                        <span class="ti-book"></span>
+                    </div><!-- .icon -->
+
+                    <header class="entry-header">
+                            <i class="fa fa-camera" style="font-size:36px;margin-left:25%;margin-right:25%;"></i>
+                            <h2 class="entry-title" style="margin-left:15%;margin-right:15%;">Gallery</h2>
+                    </header><!-- .entry-header -->
+
+                    <div class="entry-content">
+                        <p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    </div><!-- .entry-content -->
+
+                    <footer class="entry-footer read-more">
+                        <a href="#">read more<i class="fa fa-long-arrow-right"></i></a>
+                    </footer><!-- .entry-footer -->
+                </div><!-- .icon-box -->
+
+                <div class="icon-box">
+                    <div class="icon">
+                        <span class="ti-world"></span>
+                    </div><!-- .icon -->
+
+                    <header class="entry-header">
+                            <i class="fa fa-user-circle-o" style="font-size:36px;margin-left:25%;margin-right:25%;"></i>
+                            <h2 class="entry-title" style="margin-left:20%;margin-right:20%;">Login</h2>
+                    </header><!-- .entry-header -->
+
+                    <div class="entry-content">
+                        <p>Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    </div><!-- .entry-content -->
+
+                    <footer class="entry-footer read-more">
+                        <a href="#">read more<i class="fa fa-long-arrow-right"></i></a>
+                    </footer><!-- .entry-footer -->
+                </div><!-- .icon-box -->
+            </div><!-- .row -->
+        </div><!-- .container-fluid -->
+    </div><!-- .icon-boxes -->
+
+    <div style="height:200px;text-align:center;padding-top:50px;">
+        <h1>Announcements</h1>
+    </div>
+    <div class="myrow">
+        <div style=" float: left;width: 50%;padding: 10px;height: 300px;background-color:white;text-align:center;padding-left:10px;">
+            <h1>Events</h1>
+            <div>
+                <img id="event_img" style="width: 40%;border: 2px solid black;" src="{% static 'images/logo.jpg' %}">
+                <p style="background-color:gray;width:50%;margin-left:25%;border-radius:15px;">Event1<br/>Nabhyan</p>
+            </div>
+        </div>
+        <div style=" float: left;width: 50%;padding: 10px;height: 300px;background-color:white;text-align:center;padding-left:10px;">
+            <h1>Achievements</h1>
+            <div>
+                <img id="event_img" style="width: 40%;border: 2px solid black;" src="{% static 'images/logo.jpg' %}">
+                <p style="background-color:gray;width:50%;margin-left:25%;border-radius:15px;">Achievement1<br/>Book Published</p>
+            </div>
+        </div>
+    </div>
+    
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <div class="footer" style="height:150px;background-color:black;padding-top:70px">
+        <a style="float:left;text-align:center;padding-left: 40%;font-size:20px;color:white;text-decoration: none;" href=""/>HOME</a>
+        <a style="float:left;text-align:center;padding-left: 10px;font-size:20px;color:white;text-decoration: none;" href=""/>ABOUT</a>
+        <a style="float:left;text-align:center;padding-left: 10px;font-size:20px;color:white;text-decoration: none;" href=""/>CONTACT</a>
+        <a style="float:left;text-align:center;padding-left: 10px;font-size:20px;color:white;text-decoration: none;" href=""/>TERMS</a>
+    </div>
+
+
+    
+<script type='text/javascript' src='js/jquery.js'></script>
+<script type='text/javascript' src='js/swiper.min.js'></script>
+<script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
+<script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
+<script type='text/javascript' src='js/custom.js'></script>
+
+
+
+</body>
+</html>
